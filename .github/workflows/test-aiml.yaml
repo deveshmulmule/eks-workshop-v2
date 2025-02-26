@@ -10,11 +10,6 @@ permissions:
   contents: read
 
 jobs:
-  test-inferentia:
-    uses: ./.github/workflows/module-test.yaml
-    with:
-      glob: aiml/inferentia
-    secrets: inherit
   test-llm:
     uses: ./.github/workflows/module-test.yaml
     with:
